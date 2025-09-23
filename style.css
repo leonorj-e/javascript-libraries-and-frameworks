@@ -1,9 +1,15 @@
-.maincontainer {
-    background-color: lavender;
+@font-face {
+    font-family: "Super Trend";
+    src: local("Super Trend"), url(fonts/SuperTrend.ttf) format(".tff");
 }
 
-.col,
-.col-6 {
+h1 {
+    font-family: "Super Trend", sans-serif;
+}
 
-    border: solid black 4px;
+.red-hat-display-text {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
