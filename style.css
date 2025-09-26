@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Super Trend";
-    src: local("Super Trend"), url(fonts/SuperTrend.ttf) format(".tff");
+    /* src: local("Super Trend"),  */
+    src: url(fonts/SuperTrend.ttf) format("truetype");
 }
 
 h1 {
