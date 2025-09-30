@@ -12,3 +12,29 @@ black;
     object-position: 50% 50%;
 }
 
+body{
+  margin: 0;
+  padding-top: 2.5rem;
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #FFF9E9;   /* very light coral */
+}
+
+
+.container{
+  display: grid;           /* centers children without touching HTML */
+  justify-items: center;   /* horizontally center BOTH h1 and .splide */
+  row-gap: 1rem;           /* space between title and slider */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 2.75rem;    /* top padding for the page */
+}
+
+/* Remove the fixed width from the heading so it centers perfectly */
+h1{
+  width: auto;             /* override any earlier width */
+  margin: 0;
+  color: #5A483A;               /* grid + justify-items handles centering */
+  text-align: center;
+}
+
+
