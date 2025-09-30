@@ -1,0 +1,14 @@
+.splide {
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    background-color: 
+black;
+}
+
+.splide__slide__container img {
+    height: 400px;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+

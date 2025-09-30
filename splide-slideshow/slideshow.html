@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slideshow using Splide.js</title>
+  <!-- after tittle goes CSS links -->
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+</head>
+<body>
+  <main class="container">
+
+     <h1>Slideshow using Splide.js</h1>
+    <!-- Step 8/9/11: Carousel HTML goes here -->
+     
+
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="splide__slide__container"> <img src="./img/bird1.jpg" alt="Close-up of a vibrant blue-and-yellow macaw bird">
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div class="splide__slide__container"> <img src="./img/bird2.jpg" alt="Kingfisher bird with bright blue and turquoise plumage">
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div class="splide__slide__container"> <img src="./img/bird3.jpg" alt="Small bird called Robin, with a bright orange-red breast and face">
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div class="splide__slide__container"> <img src="./img/bird4.jpg" alt="Three vibrant blue-and-yellow macaws perched side by side">
+                    </div>
+                </li>
+            </ul>
+        </div>
+</section>
+
+    
+    
+  </main>
+
+  <!-- 1) Load the library -->
+<script src="js/splide.min.js"></script>
+
+<!-- 2) Initialize AFTER the library is loaded -->
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    new Splide('#image-carousel', {
+      type: 'loop',
+      perPage: 1,
+      autoplay: true,
+      pauseOnHover: true,
+      arrows: true,
+      pagination: true,
+    }).mount();
+  });
+</script>
+
+
+</body>
+</html>
